@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Velya Roastery — Coffee & Culture</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap (optional, used for grid & components) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Link to external stylesheet (copy the CSS included at the bottom to style.css) -->
+  <link rel="stylesheet" href="coffee-shop.css">
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR with logo next to brand -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <!-- Put your logo at /assets/logo.png or change the path -->
+      <img src="ror.jpg" alt="Velya Roastery Logo" class="brand-logo" width="52" height="52">
+      <span class="brand-text">Velya Roastery</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero d-flex align-items-center text-white" id="hero">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="hero-title">Velya Roastery — Coffee & Culture</h1>
+        <p class="lead hero-sub">Specialty beans • Handcrafted menu • A place to create and connect</p>
+        <div class="mt-4">
+          <a href="#menu" class="btn btn-primary btn-lg me-2">Lihat Menu</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">Hubungi Kami</a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="hero-card shadow" data-aos="zoom-in">
+          <img src="a.jpg" alt="Golden Brew Cup" class="hero-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="row gy-4 align-items-center">
+      <div class="col-md-6">
+        <img src="c.jpg" alt="beans" class="rounded-3 img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2>Tentang Velya Roastery</h2>
+        <p class="mb-3">Kami meracik kopi dari biji-biji terbaik petani lokal, memadukan teknik roasting modern dan tradisional untuk menghasilkan cita rasa yang kaya dan seimbang. Golden Brew adalah ruang untuk berkumpul, bekerja, dan merayakan kopi.</p>
+        <ul class="features">
+          <li>Single origin & seasonal roasts</li>
+          <li>Barista bersertifikat & brewing class</li>
+          <li>Menu fusion yang dibuat khusus</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU (with images) -->
+<section id="menu" class="py-5 bg-soft" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu Unggulan</h2>
+    <p class="text-center text-muted mb-4">Kreasi unik kami — tetap familiar, tetapi dengan sentuhan berbeda.</p>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <article class="card menu-card h-100" data-aos="flip-left">
+          <img src="b.jpg" alt="Golden Latte" class="menu-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Golden Latte</h5>
+            <p class="card-text">Espresso lembut, susu oatly, dan sirup karamel biji kopi khas kami. Topping: edible gold dust (opsional).</p>
+            <p class="price">Rp 32.000</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <article class="card menu-card h-100" data-aos="flip-left" data-aos-delay="100">
+          <img src="brew.jpg" alt="Spice Cold Brew" class="menu-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Spice Cold Brew</h5>
+            <p class="card-text">Cold brew infused dengan cinnamon & orange peel — menyegarkan dan kaya aroma.</p>
+            <p class="price">Rp 28.000</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <article class="card menu-card h-100" data-aos="flip-left" data-aos-delay="200">
+          <img src="miso.jpg" alt="Miso Caramel" class="menu-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Miso Caramel Capp</h5>
+            <p class="card-text">Kombinasi miso salt & caramel menyatu dengan crema cappuccino — gurih manis yang berimbang.</p>
+            <p class="price">Rp 30.000</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Food row -->
+      <div class="col-md-4">
+        <article class="card menu-card h-100" data-aos="flip-left">
+          <img src="bc.jpg" alt="Croissant" class="menu-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Croissant</h5>
+            <p class="card-text">Croissant butter dengan infused truffle oil—elevated breakfast comfort.</p>
+            <p class="price">Rp 26.000</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="card menu-card h-100" data-aos="flip-left" data-aos-delay="100">
+          <img src="ri.jpg" alt="Ricotta Toast" class="menu-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Ricotta Toast</h5>
+            <p class="card-text">Sourdough panggang, ricotta, zest lemon, honey drizzle — ringan namun kompleks.</p>
+            <p class="price">Rp 34.000</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="card menu-card h-100" data-aos="flip-left" data-aos-delay="200">
+          <img src="af.jpg" alt="Coffee Pudding" class="menu-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Affogato</h5>
+            <p class="card-text">Puding kopi house-made dengan shot espresso hangat—dessert meets espresso.</p>
+            <p class="price">Rp 38.000</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-4">Gallery</h2>
+    <div class="row g-3">
+      <div class="col-sm-6 col-md-4"><img src="in.jpg" alt="gallery" class="rounded-3 w-100"></div>
+      <div class="col-sm-6 col-md-4"><img src="eks.jpg" alt="gallery" class="rounded-3 w-100"></div>
+      <div class="col-sm-6 col-md-4"><img src="ba.jpg" alt="gallery" class="rounded-3 w-100"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-5 bg-soft" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-4">Testimoni</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 rounded-3 shadow-sm bg-card">
+          <p>"Ambiencenya bikin betah, dan Golden Latte mereka benar-benar memanjakan lidah."</p>
+          <strong>- Maya</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 rounded-3 shadow-sm bg-card">
+          <p>"Menu unik, cocok buat yang ingin coba sesuatu baru tapi tetap nyaman."</p>
+          <strong>- Budi</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 rounded-3 shadow-sm bg-card">
+          <p>"Tempat terbaik untuk kerja remote — wifi kencang dan kopi mantap."</p>
+          <strong>- Sari</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION + CTA -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <h2>Temukan Kami</h2>
+        <p class="mb-3">Kunjungi gerai utama kami di pusat kota — nyaman untuk ngopi maupun meeting.</p>
+        <p><strong>Email:</strong> hello@velyaroastery.co</p>
+        <p><strong>Phone:</strong> +62 823 3887 4891</p>
+        <div class="mt-3">
+          <a href="https://wa.me/6282338874891" target="_blank" class="btn btn-success me-2">Order via WhatsApp</a>
+          <a href="#menu" class="btn btn-outline-dark">Lihat Menu</a>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="ratio ratio-16x9 rounded-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.365030516938!2d106.822864!3d-6.214620!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e471c5c001%3A0x49963cf343577b89!2sCoffee%20Shop!5e0!3m2!1sen!2sid!4v1234567890" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4 text-center text-muted bg-dark text-white">
+  <div class="container">
+    <small>&copy; <span id="year"></span> Golden Brew • All rights reserved</small>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 700 });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Dark/Light toggle (persists in localStorage)
+  const modeBtn = document.getElementById('modeToggle');
+  const saved = localStorage.getItem('gb-mode');
+  if(saved === 'dark') document.body.classList.add('dark-mode');
+  modeBtn.textContent = document.body.classList.contains('dark-mode') ? 'Light' : 'Dark';
+  modeBtn.addEventListener('click', ()=>{
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    modeBtn.textContent = isDark ? 'Light' : 'Dark';
+    localStorage.setItem('gb-mode', isDark ? 'dark' : 'light');
+  });
+</script>
+</body>
